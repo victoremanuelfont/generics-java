@@ -3,15 +3,15 @@ package service;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PrintService {
+public class PrintServiceString {
 
-	private List<Integer> list = new ArrayList<>();
+	private List<String> list = new ArrayList<>();
 
-	public void addValue(Integer value) {
+	public void addValue(String value) {
 		list.add(value);
 	}
 
-	public Integer first() {
+	public String first() {
 		if (list.isEmpty()) {
 			throw new IllegalStateException("List is empty"); // esta vazia
 		}
